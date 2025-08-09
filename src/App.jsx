@@ -4,6 +4,13 @@ const App=()=>{
   //2. Binding the input with the variables
   //3. Saving the items  to Array
   //4. Display items from the array 
+  // const [myNum, setmyNum] = useState("")
+  
+// let myNum = 50
+// const increm=(inc)=>{
+//   myNum+=inc
+//   console.log(myNum);
+// }
   const [productName, setproductName] = useState('')
   const [productPrice, setproductPrice] = useState(0)
   const [productQuantity, setproductQuantity] = useState(0)
@@ -20,14 +27,14 @@ const App=()=>{
       setallProducts(product)
       console.log(product);
       setallProducts([...allProducts,product])  
-      console.log(allProducts);
-      
+      console.log(allProducts);  
   }
 
   return(
     <>
     <marquee behavior="" direction=""> <mark> <h2>Akinola Store</h2></mark></marquee>
-   
+    {/* <h1 >My Num is {myNum} </h1>
+    <button onClick={()=>increm(20)}>Increases by 1</button> <br /> <br /> */}
     <input type="text" placeholder="Name of the product" onChange={(e)=>setproductName(e.target.value)} />
     <input type="text" placeholder="Price of the product" onChange={(e)=>setproductPrice(e.target.value)} />
     <input type="text" placeholder="Quantity of the product" onChange={(e)=>setproductQuantity(e.target.value)}/>
@@ -42,8 +49,6 @@ const App=()=>{
           <button>
           <h3>{product.productPrice}</h3>
           </button>
-        
-
         </>
        
         )

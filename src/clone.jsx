@@ -1,4 +1,3 @@
-
 import React, { useState } from  'react'
 //Creating of input and variables
 //binding inputs with variables
@@ -30,6 +29,8 @@ const addProduct=()=>{
 return(
   <>
   <h2>Akinola store</h2>
+    {/* <h1 >My Num is {myNum} </h1>
+    <button onClick={()=>increm(20)}>Increases by 1</button> <br /> <br /> */}
 <input type="text" placeholder='ProductName' onChange={(e)=>setProductName(e.target.value)}/>
 <input type="text" placeholder='ProductPrice' onChange={(e)=>setProductPrice(e.target.value)} />
 <input type="text" placeholder='ProductImage' onChange={(e)=>setProductImage(e.target.value)} />
